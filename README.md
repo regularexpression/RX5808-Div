@@ -1,40 +1,39 @@
 # RX5808-Div
-## 1.界面设计基于LVGL
+## 1. The interface design is based on [LVGL](https://github.com/lvgl/lvgl)
 
-演示视频见：https://www.bilibili.com/video/BV1yr4y1371b
+See the [demonstration video](https://www.bilibili.com/video/BV1yr4y1371b).
 
 ![ui](https://user-images.githubusercontent.com/66466560/218503938-571cd1fa-2c89-4279-a6aa-281c7fcf8234.jpeg)
 
+## 2. Control
+- Long press the OK button on the main interface to lock/unlock the manual channel, short press to enter the menu; when unlocked, press up, down, left, and right to adjust the frequency.
+- The menu interface is divided into three parts:
+  - Scan;
+  - Settings;
+  - About.
 
-1)主界面长按确定键，可锁定/解锁手动频道,短按进入菜单；  解锁情况下，按上下左右可调整频率。
+  Press up and down to switch menu options, confirm to enter the submenu, and left click to return to the main interface.
+  
+- The scan menu has three sub-contents:
+  - The graph scan shows the signal strength of frequency 5300-5900MHz;
+  - The table scan display displays the image transmission channel signal strength in different colors. After the scan is completed, the frequency is switched to the channel with the best current signal strength and is displayed in the upper right corner.
+  - RSSI calibration is used to calibrate RSSI. If image transmission is not turned on, the calibration will fail. If it succeeds, the result will be saved.
 
-2)菜单界面分为三块内容：扫描；设置；关于。
+- In the setting interface, you can set the display backlight intensity, fan speed, boot animation, buzzer, etc. to be turned on. The OSD format needs to be saved and re-opened on the main page to take effect.
 
- 按上下切换菜单选项，确定进入子菜单，左键返回主界面
-
-3）扫描菜单有三个子内容：
-
-图扫描显示频率5300-5900MHz信号强度；
-
-表扫描显示将图传频道信号强度按不同颜色显示，扫描结束，频率切换至最当前信号强度最好的频道，并显示在右上角。
-
-RSSI校准用于校准RSSI,未开启图传会校准失败，成功则会保存结果。
-
-4）设置界面可设置显示屏背光强度，风扇转速、开机动画、蜂鸣器等是否开启，OSD制式需要保存后重新在主页面开启才能生效。
-
-5）关于界面显示相关信息。
+- Display relevant information on the interface.
 
  
 
-## 2.OSD支持
+## 3. OSD
 
-OSD功能由林面包（B站ID）添加，非叠加模式，主界面下解锁即可开启。
+The OSD function was added by Lin Baobao (Bilibili ID). It is in non-overlay mode and can be turned on by unlocking it on the main interface.
 
-演示视频见：[https://www.bilibili.com/video/BV1ya411g78U ](https://www.bilibili.com/video/BV1ya411g78U) 与接收机UI完全同步。
+See the [demonstration video](https://www.bilibili.com/video/BV1ya411g78U).
+Fully synchronized with receiver UI.
 
 ![osd](https://user-images.githubusercontent.com/66466560/218504602-102e7fe0-b935-48ca-be9e-f459200034c8.jpg)
 
 
-## 3.硬件设计
-
-硬件开源地址：https://oshwhub.com/ftps/rx5808-div
+## 4. Hardware opensource design
+https://oshwhub.com/ftps/rx5808-div
