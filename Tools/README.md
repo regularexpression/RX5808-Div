@@ -1,28 +1,28 @@
 # RX5808-Div-Tool
 
-RX5808下载固件指南
+RX5808 Download Firmware Guide
 
-一、	STM32版本
+## 1. STM32 version
 
-STM32固件为STM32_Firmware.zip，STM32可用USB，UART，SWD下载，不再赘述。
+The STM32 firmware is STM32_Firmware.zip. STM32 can be downloaded via USB, UART, or SWD, so I won’t go into details.
 
-二、	ESP32版本
+## 2. ESP32 version
 
-1、解压此目录下ESP32_FirmWare.zip文件夹，得到三个xxx.bin文件，如下图：
+1. Unzip the ESP32_FirmWare.zip folder in this directory and get three xxx.bin files, as shown below:
 
 ![image](https://user-images.githubusercontent.com/66466560/183941319-5b98264a-7aaf-42ed-a1c0-3359cdcafc04.png)
 
-2、解压此目录下flash_download_tool_3.9.2_0.zip文件夹，得到以下文件：
+2. Unzip the flash_download_tool_3.9.2_0.zip folder in this directory and obtain the following files:
 
 ![image](https://user-images.githubusercontent.com/66466560/183941369-ae1474e4-ccc6-4826-a105-4ce33f092943.png)
  
-3、双击flash_download_tool_3.9.2_0.exe打开下载程序：
+3. Double-click flash_download_tool_3.9.2_0.exe to open the download program:
 
 ![image](https://user-images.githubusercontent.com/66466560/183941402-a557a9e5-d548-456c-b53c-5481e826d153.png)
 
-选择ESP32并点击OK。
+Select ESP32 and click OK.
 
-4.将解压得到的bin文件按下图顺序打开：
+4. Open the decompressed bin file in the following order:
 
          bootloader.bin     0x1000
          
@@ -32,16 +32,16 @@ STM32固件为STM32_Firmware.zip，STM32可用USB，UART，SWD下载，不再赘
          
  ![image](https://user-images.githubusercontent.com/66466560/183941506-98f46ba4-1fad-475d-91d7-f391da223f43.png)
 
-5.SPIFLASH按下图设置：
+5. SPIFLASH settings as shown below:
 
 ![image](https://user-images.githubusercontent.com/66466560/183941552-d3622ece-0861-4cdc-a700-2601824ec92c.png)
  
-6.选择COM口并下载：（下图是下载完成的样子）
+6. Select the COM port and download: (The picture below shows the download completion)
  
 ![image](https://user-images.githubusercontent.com/66466560/183941582-fadea089-f43e-490e-819a-48b0e2b0c2e5.png)
 
-7.问题
-如遇花屏问题用ESP32_FirmWare_Slow固件。
+7. Questions
+If you encounter screen distortion problems, use the ESP32_FirmWare_Slow firmware.
 
-2022.8.10新增模组版固件为ESP32_Model_FirmWare。
+2022.08.10 The new module version firmware ESP32_Model_FirmWare。
  
